@@ -1,12 +1,4 @@
-var DenyItem = React.createClass({displayName: "DenyItem",
-    render: function () {
-        return (
-            React.createElement("span", null, 
-                React.createElement("i", {className: "icon-ban-circle"}), " ", React.createElement("a", {href: "#"}, "Deny")
-            )
-        )
-    }
-});
+
 
 var ResourceItem = React.createClass({displayName: "ResourceItem",
     getInitialState: function () {
@@ -27,6 +19,22 @@ var ResourceItem = React.createClass({displayName: "ResourceItem",
         return (result);
     }
 });
+
+
+
+
+var DenyItem = React.createClass({displayName: "DenyItem",
+    render: function () {
+        return (
+            React.createElement("span", null, 
+                React.createElement("i", {className: "icon-ban-circle"}), " ", React.createElement("a", {href: "#"}, "Deny")
+            )
+        )
+    }
+});
+
+
+
 
 var Popover = React.createClass({displayName: "Popover",
     handleClick: function () {
@@ -54,13 +62,19 @@ var Popover = React.createClass({displayName: "Popover",
                     React.createElement("input", {type: "text", ref: "textBox"})
                 ), 
                 React.createElement("div", {className: "buttons"}, 
-                    React.createElement("a", {href: "javascript:", onClick: this.handleClick}, "Add resouces"), 
-                    React.createElement("a", {href: "javascript:", onClick: this.props.onClosePopover}, "Close")
+                    React.createElement("a", {href: "javascript:", onClick: this.handleClick, ref: "submitButton"}, "Add resources"), 
+                    React.createElement("a", {href: "javascript:", onClick: this.props.onClosePopover, ref: "closeButton"}, "Close")
                 )
             )
         )
     }
 });
+
+
+
+
+
+
 
 var AgentItem = React.createClass({displayName: "AgentItem",
     getInitialState: function () {
@@ -159,6 +173,10 @@ var AgentItem = React.createClass({displayName: "AgentItem",
     }
 });
 
+
+
+
+
 var AgentsList = React.createClass({displayName: "AgentsList",
     getDataFromServer: function () {
         return [
@@ -202,7 +220,7 @@ var AgentsList = React.createClass({displayName: "AgentsList",
 
         var agents = data.map(function (agent) {
             return React.createElement(AgentItem, {heading: agent.heading, status: agent.status, host: agent.host, path: agent.path, 
-                              path: agent.path, resources: agent.resources, denied: agent.denied})
+                              resources: agent.resources, denied: agent.denied})
         });
 
         return (
@@ -212,5 +230,8 @@ var AgentsList = React.createClass({displayName: "AgentsList",
         )
     }
 });
+
+
+
 
 React.render(React.createElement(AgentsList, null), document.getElementById('leftContent'));
