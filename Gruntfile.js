@@ -69,11 +69,23 @@ module.exports = function (grunt) {
                     'portfolio.html': 'src/portfolio.html'
                 }
             }
+        },
+        cssmin: {
+            options: {
+                shorthandCompacting: false,
+                roundingPrecision: -1
+            },
+            target: {
+                files: {
+                    'css/OpenSans-300-700.css': ['src/css/OpenSans-300-700.css']
+                }
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-    grunt.registerTask('default', ['copy', 'htmlmin']);
+    grunt.registerTask('default', ['copy', 'htmlmin', 'cssmin']);
 };
