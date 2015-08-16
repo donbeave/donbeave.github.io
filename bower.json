@@ -6,7 +6,7 @@
     "Alexey Zhokhov <donbeave@gmail.com>"
   ],
   "description": "Alexey Zhokhov Resume",
-  "license": "MIT",
+  "license": "Creative Commons",
   "ignore": [
     "**/.*",
     "node_modules",
