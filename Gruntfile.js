@@ -53,10 +53,27 @@ module.exports = function (grunt) {
                     // @end WOW
                 ]
             }
+        },
+        htmlmin: {
+            dist: {
+                options: {
+                    removeComments: true,
+                    removeAttributeQuotes: true,
+                    collapseWhitespace: true,
+                    minifyCSS: true,
+                    minifyJS: true,
+                    minifyURLs: true
+                },
+                files: {
+                    'index.html': 'src/index.html',
+                    'portfolio.html': 'src/portfolio.html'
+                }
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-htmlmin');
 
-    grunt.registerTask('default', ['copy']);
+    grunt.registerTask('default', ['copy', 'htmlmin']);
 };

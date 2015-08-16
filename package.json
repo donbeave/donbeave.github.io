@@ -11,13 +11,14 @@
     "url": "git+https://github.com/donbeave/donbeave.github.io.git"
   },
   "author": "Alexey Zhokhov",
-  "license": "Creative Commons",
+  "license": "CC-BY-4.0",
   "bugs": {
     "url": "https://github.com/donbeave/donbeave.github.io/issues"
   },
   "homepage": "https://github.com/donbeave/donbeave.github.io#readme",
   "devDependencies": {
     "grunt": "^0.4.5",
-    "grunt-contrib-copy": "^0.8.0"
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-htmlmin": "^0.4.0"
   }
 }
