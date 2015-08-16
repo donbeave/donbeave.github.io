@@ -1,0 +1,23 @@
+{
+  "name": "donbeave.github.io",
+  "version": "1.0.0",
+  "homepage": "http://donbeave.github.io",
+  "authors": [
+    "Alexey Zhokhov <donbeave@gmail.com>"
+  ],
+  "description": "Alexey Zhokhov Resume",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "~3.4.0",
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "wow": "~1.1.2"
+  }
+}
