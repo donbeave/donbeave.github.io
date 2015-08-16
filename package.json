@@ -1,0 +1,19 @@
+{
+  "name": "donbeave.github.io",
+  "version": "1.0.0",
+  "description": "Alexey Zhokhov Resume",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donbeave/donbeave.github.io.git"
+  },
+  "author": "Alexey Zhokhov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/donbeave/donbeave.github.io/issues"
+  },
+  "homepage": "https://github.com/donbeave/donbeave.github.io#readme"
+}
