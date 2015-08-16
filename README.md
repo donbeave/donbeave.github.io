@@ -11,3 +11,9 @@ npm install -g bower
 ```bash
 bower install
 ```
+
+### Build project
+
+```bash
+grunt
+```
