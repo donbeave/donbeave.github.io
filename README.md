@@ -5,3 +5,9 @@
 ```bash
 npm install -g bower
 ```
+
+### Install packages
+
+```bash
+bower install
+```
