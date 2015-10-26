@@ -6,6 +6,12 @@
 npm install -g bower
 ```
 
+### Install dependencies
+
+```bash
+npm install
+```
+
 ### Install packages
 
 ```bash
