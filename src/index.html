@@ -613,6 +613,10 @@
     color: white;
   }
 
+  .skill-separator {
+    display: none;
+  }
+
   @media (max-width: 600px) {
     #contacts .avatar {
       width: 90px;
@@ -707,6 +711,17 @@
     a[href]:after {
       content: none !important;
     }
+
+    .skill {
+      padding: 0;
+      margin: 0;
+      background-color: white;
+      color: white;
+    }
+
+    .skill-separator {
+      display: inline;
+    }
   }
 </style>
 
@@ -790,12 +805,16 @@
         <div class="row">
           <div class="col-sm-4 group">Programming languages:</div>
           <div class="col-sm-7">
-            <a href="https://www.oracle.com/java/" class="skill" target="_blank">Java</a>
-            <a href="https://groovy-lang.org/" class="skill" target="_blank">Groovy</a>
-            <a href="https://kotlinlang.org/" class="skill" target="_blank">Kotlin</a>
+            <a href="https://www.oracle.com/java/" class="skill" target="_blank">Java</a><span
+              class="skill-separator">, </span>
+            <a href="https://groovy-lang.org/" class="skill" target="_blank">Groovy</a><span
+              class="skill-separator">, </span>
+            <a href="https://kotlinlang.org/" class="skill" target="_blank">Kotlin</a><span
+              class="skill-separator">, </span>
             <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="skill"
-               target="_blank">JavaScript</a>
-            <a href="https://www.typescriptlang.org/" class="skill" target="_blank">TypeScript</a>
+               target="_blank">JavaScript</a><span class="skill-separator">, </span>
+            <a href="https://www.typescriptlang.org/" class="skill" target="_blank">TypeScript</a><span
+              class="skill-separator">, </span>
             <a href="https://www.gnu.org/software/bash/" class="skill" target="_blank">Bash</a>
           </div>
         </div>
@@ -803,17 +822,27 @@
         <div class="row">
           <div class="col-sm-4 group">Back-end technologies:</div>
           <div class="col-sm-7">
-            <a href="https://spring.io/projects/spring-boot/" class="skill" target="_blank">Spring Boot</a>
-            <a href="https://spring.io/projects/spring-framework/" class="skill" target="_blank">Spring Framework</a>
-            <a href="https://dataflow.spring.io/" class="skill" target="_blank">Spring Cloud Data Flow</a>
-            <a href="https://projectreactor.io/" class="skill" target="_blank">Project Reactor</a>
-            <a href="https://hibernate.org/" class="skill" target="_blank">Hibernate</a>
-            <a href="https://github.com/google/guava/" class="skill" target="_blank">Guava</a>
-            <a href="https://flywaydb.org/" class="skill" target="_blank">Flyway</a>
-            <a href="https://graphql.org/" class="skill" target="_blank">GraphQL</a>
-            <a href="https://grpc.io/" class="skill" target="_blank">gRPC</a>
-            <a href="https://www.elastic.co/" class="skill" target="_blank">Elasticsearch</a>
-            <a href="https://nodejs.org/" class="skill" target="_blank">Node.js</a>
+            <a href="https://spring.io/projects/spring-boot/" class="skill" target="_blank">Spring Boot</a><span
+              class="skill-separator">, </span>
+            <a href="https://spring.io/projects/spring-framework/" class="skill" target="_blank">Spring
+              Framework</a><span class="skill-separator">, </span>
+            <a href="https://dataflow.spring.io/" class="skill" target="_blank">Spring Cloud Data Flow</a><span
+              class="skill-separator">, </span>
+            <a href="https://projectreactor.io/" class="skill" target="_blank">Project Reactor</a><span
+              class="skill-separator">, </span>
+            <a href="https://hibernate.org/" class="skill" target="_blank">Hibernate</a><span
+              class="skill-separator">, </span>
+            <a href="https://github.com/google/guava/" class="skill" target="_blank">Guava</a><span
+              class="skill-separator">, </span>
+            <a href="https://flywaydb.org/" class="skill" target="_blank">Flyway</a><span
+              class="skill-separator">, </span>
+            <a href="https://graphql.org/" class="skill" target="_blank">GraphQL</a><span
+              class="skill-separator">, </span>
+            <a href="https://grpc.io/" class="skill" target="_blank">gRPC</a><span class="skill-separator">, </span>
+            <a href="https://www.elastic.co/" class="skill" target="_blank">Elasticsearch</a><span
+              class="skill-separator">, </span>
+            <a href="https://nodejs.org/" class="skill" target="_blank">Node.js</a><span
+              class="skill-separator">, </span>
             <a href="https://expressjs.com/" class="skill" target="_blank">Express</a>
           </div>
         </div>
@@ -822,10 +851,14 @@
           <div class="col-sm-4 group">Front-end technologies:</div>
           <div class="col-sm-7">
 
-            <a href="https://angular.io/" class="skill" target="_blank">Angular</a>
-            <a href="https://reactjs.org/" class="skill" target="_blank">React</a>
-            <a href="https://www.electronjs.org/" class="skill" target="_blank">Electron</a>
-            <a href="https://sass-lang.com/" class="skill" target="_blank">SCSS</a>
+            <a href="https://angular.io/" class="skill" target="_blank">Angular</a><span
+              class="skill-separator">, </span>
+            <a href="https://reactjs.org/" class="skill" target="_blank">React</a><span
+              class="skill-separator">, </span>
+            <a href="https://www.electronjs.org/" class="skill" target="_blank">Electron</a><span
+              class="skill-separator">, </span>
+            <a href="https://sass-lang.com/" class="skill" target="_blank">SCSS</a><span
+              class="skill-separator">, </span>
             <a href="http://lesscss.org/" class="skill" target="_blank">LESS</a>
             <div style="font-size: 14px;">
               Experience in creating cross-browsers websites responsive/adaptive designs and cross-platform desktop
@@ -844,7 +877,7 @@
         <div class="row">
           <div class="col-sm-4 group">Messaging/Streaming:</div>
           <div class="col-sm-7">
-            <a href="https://www.rabbitmq.com/" class="skill" target="_blank">RabbitMQ</a>
+            <a href="https://www.rabbitmq.com/" class="skill" target="_blank">RabbitMQ</a><span class="skill-separator">, </span>
             <a href="https://kafka.apache.org/" class="skill" target="_blank">Kafka</a>
           </div>
         </div>
@@ -852,8 +885,10 @@
         <div class="row">
           <div class="col-sm-4 group">Testing:</div>
           <div class="col-sm-7">
-            <a href="https://junit.org/junit5/" class="skill" target="_blank">JUnit 5 Platform</a>
-            <a href="https://mockito.org/" class="skill" target="_blank">Mockito</a>
+            <a href="https://junit.org/junit5/" class="skill" target="_blank">JUnit 5 Platform</a><span
+              class="skill-separator">, </span>
+            <a href="https://mockito.org/" class="skill" target="_blank">Mockito</a><span
+              class="skill-separator">, </span>
             <a href="https://www.selenium.dev/" class="skill" target="_blank">Selenium</a>
           </div>
         </div>
@@ -861,9 +896,12 @@
         <div class="row">
           <div class="col-sm-4 group">Databases:</div>
           <div class="col-sm-7">
-            <a href="https://www.postgresql.org/" class="skill" target="_blank">PostgreSQL</a>
-            <a href="https://mariadb.org/" class="skill" target="_blank" title="Replacement for MySQL">MariaDB</a>
-            <a href="https://www.mongodb.com/" class="skill" target="_blank">MongoDB</a>
+            <a href="https://www.postgresql.org/" class="skill" target="_blank">PostgreSQL</a><span
+              class="skill-separator">, </span>
+            <a href="https://mariadb.org/" class="skill" target="_blank" title="Replacement for MySQL">MariaDB</a><span
+              class="skill-separator">, </span>
+            <a href="https://www.mongodb.com/" class="skill" target="_blank">MongoDB</a><span
+              class="skill-separator">, </span>
             <a href="https://redis.io/" class="skill" target="_blank">Redis</a>
           </div>
         </div>
@@ -871,7 +909,8 @@
         <div class="row">
           <div class="col-sm-4 group">Build Systems:</div>
           <div class="col-sm-7">
-            <a href="https://gradle.org/" class="skill" target="_blank" title="Include Gradle Kotlin DSL">Gradle</a>
+            <a href="https://gradle.org/" class="skill" target="_blank"
+               title="Include Gradle Kotlin DSL">Gradle</a><span class="skill-separator">, </span>
             <a href="https://maven.apache.org/" class="skill" target="_blank">Maven</a>
           </div>
         </div>
@@ -879,7 +918,7 @@
         <div class="row">
           <div class="col-sm-4 group">Web Servers:</div>
           <div class="col-sm-7">
-            <a href="https://nginx.org/" class="skill" target="_blank">nginx</a>
+            <a href="https://nginx.org/" class="skill" target="_blank">nginx</a><span class="skill-separator">, </span>
             <a href="http://undertow.io/" class="skill" target="_blank">Undertow</a>
           </div>
         </div>
@@ -887,10 +926,13 @@
         <div class="row">
           <div class="col-sm-4 group">Automation & Orchestration:</div>
           <div class="col-sm-7">
-            <a href="https://kubernetes.io/" class="skill" target="_blank">Kubernetes</a>
-            <a href="https://helm.sh/" class="skill" target="_blank">Helm</a>
-            <a href="https://www.docker.com/" class="skill" target="_blank">Docker</a>
-            <a href="https://www.ansible.com/" class="skill" target="_blank">Ansible</a>
+            <a href="https://kubernetes.io/" class="skill" target="_blank">Kubernetes</a><span
+              class="skill-separator">, </span>
+            <a href="https://helm.sh/" class="skill" target="_blank">Helm</a><span class="skill-separator">, </span>
+            <a href="https://www.docker.com/" class="skill" target="_blank">Docker</a><span
+              class="skill-separator">, </span>
+            <a href="https://www.ansible.com/" class="skill" target="_blank">Ansible</a><span
+              class="skill-separator">, </span>
             <a href="https://www.terraform.io/" class="skill" target="_blank">Terraform</a>
           </div>
         </div>
@@ -898,7 +940,8 @@
         <div class="row">
           <div class="col-sm-4 group">CI/CD:</div>
           <div class="col-sm-7">
-            <a href="https://gitlab.com/" class="skill" target="_blank">GitLab</a>
+            <a href="https://gitlab.com/" class="skill" target="_blank">GitLab</a><span
+              class="skill-separator">, </span>
             <a href="https://www.jenkins.io/" class="skill" target="_blank">Jenkins</a>
           </div>
         </div>
@@ -906,10 +949,13 @@
         <div class="row">
           <div class="col-sm-4 group">OS experience:</div>
           <div class="col-sm-7">
-            <a href="https://www.apple.com/macos/" class="skill" target="_blank">macOS</a>
-            <a href="https://www.debian.org/" class="skill" target="_blank">Debian</a>
-            <a href="https://www.centos.org/" class="skill" target="_blank">CentOS</a>
-            <a href="http://coreos.com/" class="skill" target="_blank">CoreOS Container Linux</a>
+            <a href="https://www.apple.com/macos/" class="skill" target="_blank">macOS</a><span class="skill-separator">, </span>
+            <a href="https://www.debian.org/" class="skill" target="_blank">Debian</a><span
+              class="skill-separator">, </span>
+            <a href="https://www.centos.org/" class="skill" target="_blank">CentOS</a><span
+              class="skill-separator">, </span>
+            <a href="http://coreos.com/" class="skill" target="_blank">CoreOS Container Linux</a><span
+              class="skill-separator">, </span>
             <a href="https://www.gentoo.org/" class="skill" target="_blank">Gentoo</a>
           </div>
         </div>
@@ -917,8 +963,10 @@
         <div class="row">
           <div class="col-sm-4 group">Cloud:</div>
           <div class="col-sm-7">
-            <a href="https://aws.amazon.com/" class="skill" target="_blank" title="Amazon Web Services">AWS</a>
-            <a href="https://cloud.google.com/" class="skill" target="_blank">Google Cloud</a>
+            <a href="https://aws.amazon.com/" class="skill" target="_blank" title="Amazon Web Services">AWS</a><span
+              class="skill-separator">, </span>
+            <a href="https://cloud.google.com/" class="skill" target="_blank">Google Cloud</a><span
+              class="skill-separator">, </span>
             <a href="https://www.alibabacloud.com/" class="skill" target="_blank" title="Aliyun">Alibaba Cloud</a>
           </div>
         </div>
@@ -926,7 +974,8 @@
         <div class="row">
           <div class="col-sm-4 group">IDE, tools:</div>
           <div class="col-sm-7">
-            <a href="https://www.jetbrains.com/idea/" class="skill" target="_blank">Intellij IDEA</a>
+            <a href="https://www.jetbrains.com/idea/" class="skill" target="_blank">Intellij IDEA</a><span
+              class="skill-separator">, </span>
             <a href="https://git-scm.com/" class="skill" target="_blank">Git</a>
           </div>
         </div>
