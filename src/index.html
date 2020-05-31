@@ -702,6 +702,12 @@
       border-left-color: #1b5496;
     }
   }
+
+  @media print {
+    a.hidden-print[href]:after {
+      content: none !important;
+    }
+  }
 </style>
 
 <div class="container">
