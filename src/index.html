@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="renderer" content="webkit"/>
-  <title>Alexey Zhokhov Resume</title>
+  <title>Alexey Zhokhov's Resume</title>
   <link rel="canonical" href="http://www.zhokhov.com/">
   <meta name="description"
         content="Senior-level IT full-stack developer and manager with 7 years in the industry with experience in back-end, front-end, mobile development and UI/UX design.">
@@ -328,13 +328,10 @@
     border: 5px solid #000;
     border-left: 5px solid white;
     border-right: 5px solid white;
-    width: 60px;
-    height: 60px;
     margin: 0 auto;
     position: relative;
     -webkit-box-shadow: 0 0 15px black;
     -moz-box-shadow: 0 0 15px black;
-    box-shadow: 0 0 15px black;
     -webkit-border-radius: 50px;
     -webkit-background-clip: padding-box;
     -moz-border-radius: 50px;
@@ -349,11 +346,30 @@
     -webkit-animation: spinoffPulse 1s infinite linear;
     -moz-animation: spinoffPulse 1s infinite linear;
     -o-animation: spinoffPulse 1s infinite linear;
-    animation: spinoffPulse 1s infinite linear
+    animation: spinoffPulse 1s infinite linear;
+    box-shadow: none;
+    border-color: rgba(255, 255, 255, 0.11);
+    border-right-color: #2E241D;
+    border-left-color: #787571;
+    width: 40px;
+    height: 40px;
   }
 
   .browsehappy {
     padding: 20px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    #back {
+      background-color: #11171f;
+      color: #6f96a2;
+    }
+
+    #loadingContainer .circle {
+      background-color: #11171f;
+      border-right-color: #11171f;
+      border-left-color: #11171f;
+    }
   }
 </style>
 
@@ -369,8 +385,7 @@
   </div>
   <div id="loadingContainer" class="animated"
        style="top: auto;margin-left: -45px;margin-top: -20px;bottom: 4em; width: 90px; text-align: center;">
-    <div class="circle"
-         style="box-shadow: none;border-color: rgba(255, 255, 255, 0.11);border-right-color: #2E241D;border-left-color: #787571;width: 40px;height: 40px;"></div>
+    <div class="circle"></div>
     <div style="font-family: Arial; font-size: 14px; padding: 4px 0 0 0; margin: 0;">LOADING</div>
   </div>
 </div>
@@ -411,19 +426,21 @@
     float: left;
   }
 
-  #info .avatar {
-    width: 50px;
-    float: right;
-    margin-top: 10px;
-
-    border-radius: 100%;
-    -moz-border-radius: 100%;
-    -webkit-border-radius: 100%;
-  }
-
   #contacts {
     background: rgb(250, 250, 250);
     padding: 10px 30px;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+  }
+
+  #contacts .avatar {
+    width: 120px;
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    height: 120px;
+    border-radius: 3px;
   }
 
   #contacts .github {
@@ -436,6 +453,7 @@
 
   #skills .group {
     color: #08c;
+    font-weight: 400;
   }
 
   #career .item {
@@ -483,6 +501,13 @@
 
   .portfolio:hover {
     border-color: black;
+  }
+
+  .interviews-ul {
+    margin: 0;
+    padding: 0 0 0 10px;
+    border-left: 3px solid #000000;
+    font-size: 15px;
   }
 
   @media (min-width: 992px) {
@@ -566,6 +591,97 @@
     font-size: 85%;
     padding: 10px 0 20px;
   }
+
+  .skill {
+    background: #3a3a3a;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27px;
+    text-decoration: none !important;
+    display: inline-block;
+  }
+
+  .skill:hover {
+    background-color: black;
+  }
+
+  .skill:hover, .skill:visited, .skill:active {
+    color: white;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #11171f;
+      color: #6f96a2;
+    }
+
+    a:focus, a:hover {
+      color: #7991a7;
+    }
+
+    h1 {
+      color: #9dc4d0;
+    }
+
+    .skill {
+      background-color: #353f52;
+      color: white;
+      padding: 3px 7px;
+      margin: 2px 0;
+    }
+
+    .skill:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .bs-docs-sidebar .nav > .active:focus > a, .bs-docs-sidebar .nav > .active:hover > a, .bs-docs-sidebar .nav > .active > a {
+      color: white;
+    }
+
+    .bs-docs-sidebar .nav > li > a:focus, .bs-docs-sidebar .nav > li > a:hover {
+      color: white;
+    }
+
+    h2 {
+      color: #b19400;
+      border-bottom-color: #4e522c;
+      font-weight: 400;
+    }
+
+    #contacts {
+      background: #000;
+      border-radius: 2px;
+    }
+
+    #contacts .github {
+      border-bottom-color: #031119;
+    }
+
+    #copyright {
+      border-top-color: #1d3750;
+    }
+
+    #career .present {
+      color: #ffd500;
+    }
+
+    #career .overview {
+      background: #080d13;
+      color: #506579;
+    }
+
+    h3 {
+      color: #c1c1c1;
+    }
+
+    .interviews-ul {
+      border-left-color: #1b5496;
+    }
+  }
 </style>
 
 <div class="container">
@@ -575,11 +691,11 @@
 
       <div id="info">
         <h1>Alexey Zhokhov</h1>
-        <img src="img/avatar.png" class="avatar"/>
       </div>
 
 
       <div id="contacts">
+        <img src="https://avatars1.githubusercontent.com/u/139017" class="avatar"/>
         <div class="row">
           <div class="col-xs-3">Email</div>
           <div class="col-xs-9"><a href="mailto:alexey@zhokhov.com">alexey@zhokhov.com</a></div>
@@ -619,24 +735,20 @@
         <div class="row">
           <div class="col-sm-8">
             <p>
-              Full-stack developer with 9 years experience in:
-            <ul class="list-unstyled">
-              <li>&mdash; Back-end development</li>
-              <li>&mdash; Front-end development for rich Internet applications (HTML5)</li>
-              <li>&mdash; Mobile native development</li>
-              <li>&mdash; UI/UX design</li>
-              <li>&mdash; Rapid prototyping</li>
-            </ul>
+              I'm a <strong>full-stack engineering manager</strong>, who more focusing on high load scalable
+              back-end Java development, with the expertise of building single-page applications (SPA) using the latest
+              front-end technologies (ex. Angular/React) include a deep knowledge of CI/CD and production-grade
+              container orchestration (Kubernetes).
             </p>
-            <p>5 years team management experience.</p>
+            <p>10+ years of experience.</p>
           </div>
 
           <div class="col-sm-4">
             <p>
-              Languages:
+              Speaking languages:
             <ul class="list-unstyled">
               <li>&mdash; Russian (native)</li>
-              <li>&mdash; Chinese (fluent)</li>
+              <li>&mdash; Mandarin Chinese (fluent)</li>
               <li>&mdash; English (professional)</li>
             </ul>
             </p>
@@ -647,96 +759,160 @@
 
 
       <div id="skills">
-        <h2>Technical Summary</h2>
+        <h2>Technical Skills</h2>
 
         <div class="row">
-          <div class="col-sm-4 group">Server-side/WebServices development:</div>
-          <div class="col-sm-7">Java, Groovy and Grails, SQL, Spring Framework, Hibernate, Quartz, Apache
-            Commons, EJB, JPA, JSP, JDBC, XML, XSLT, Guice, Spring Security, Spring Social, Spring Boot,
-            Ehcache, Elasticsearch, JavaScript, Node.js, Express.js
+          <div class="col-sm-4 group">Programming languages:</div>
+          <div class="col-sm-7">
+            <a href="https://www.oracle.com/java/" class="skill" target="_blank">Java</a>
+            <a href="https://groovy-lang.org/" class="skill" target="_blank">Groovy</a>
+            <a href="https://kotlinlang.org/" class="skill" target="_blank">Kotlin</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="skill"
+               target="_blank">JavaScript</a>
+            <a href="https://www.typescriptlang.org/" class="skill" target="_blank">TypeScript</a>
+            <a href="https://www.gnu.org/software/bash/" class="skill" target="_blank">Bash</a>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-sm-4 group">Client side development:</div>
-          <div class="col-sm-7">HTML, Javascript/AJAX, CSS, LESS, Sass, Bootstrap, GWT, Ext GWT, Google Gin,
-            jQuery, ReactJS<br/>
-            Experience in creating cross-browsers and responsive designs
+          <div class="col-sm-4 group">Back-end technologies:</div>
+          <div class="col-sm-7">
+            <a href="https://spring.io/projects/spring-boot/" class="skill" target="_blank">Spring Boot</a>
+            <a href="https://spring.io/projects/spring-framework/" class="skill" target="_blank">Spring Framework</a>
+            <a href="https://dataflow.spring.io/" class="skill" target="_blank">Spring Cloud Data Flow</a>
+            <a href="https://projectreactor.io/" class="skill" target="_blank">Project Reactor</a>
+            <a href="https://hibernate.org/" class="skill" target="_blank">Hibernate</a>
+            <a href="https://github.com/google/guava/" class="skill" target="_blank">Guava</a>
+            <a href="https://flywaydb.org/" class="skill" target="_blank">Flyway</a>
+            <a href="https://graphql.org/" class="skill" target="_blank">GraphQL</a>
+            <a href="https://grpc.io/" class="skill" target="_blank">gRPC</a>
+            <a href="https://www.elastic.co/" class="skill" target="_blank">Elasticsearch</a>
+            <a href="https://nodejs.org/" class="skill" target="_blank">Node.js</a>
+            <a href="https://expressjs.com/" class="skill" target="_blank">Express</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4 group">Front-end technologies:</div>
+          <div class="col-sm-7">
+
+            <a href="https://angular.io/" class="skill" target="_blank">Angular</a>
+            <a href="https://reactjs.org/" class="skill" target="_blank">React</a>
+            <a href="https://www.electronjs.org/" class="skill" target="_blank">Electron</a>
+            <a href="https://sass-lang.com/" class="skill" target="_blank">SCSS</a>
+            <a href="http://lesscss.org/" class="skill" target="_blank">LESS</a>
+            <div style="font-size: 14px;">
+              Experience in creating cross-browsers websites responsive/adaptive designs and cross-platform desktop
+              applications.
+            </div>
           </div>
         </div>
 
         <div class="row">
           <div class="col-sm-4 group">Mobile development:</div>
           <div class="col-sm-7">
-            Android native, iOS (Swift only), Sencha Touch, Ionic Framework, PhoneGap (Cordova)
+            <a href="https://www.android.com/" class="skill" target="_blank">Android</a>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-sm-4 group">Serialization/deserialization and communication:</div>
-          <div class="col-sm-7">protobuf, RabbitMQ</div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-4 group">Design:</div>
-          <div class="col-sm-7">Photoshop, Sketch, Balsamiq, GIMP, Inkscape</div>
+          <div class="col-sm-4 group">Messaging/Streaming:</div>
+          <div class="col-sm-7">
+            <a href="https://www.rabbitmq.com/" class="skill" target="_blank">RabbitMQ</a>
+            <a href="https://kafka.apache.org/" class="skill" target="_blank">Kafka</a>
+          </div>
         </div>
 
         <div class="row">
           <div class="col-sm-4 group">Testing:</div>
-          <div class="col-sm-7">JUnit, Selenium</div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-4 group">Databases:</div>
-          <div class="col-sm-7">MySQL/MariaDB, Oracle, MongoDB, Redis</div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-4 group">Build Systems:</div>
-          <div class="col-sm-7">Ant, Maven, Gradle, Grunt</div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-4 group">Server technologies:</div>
-          <div class="col-sm-7">Tomcat, Apache Web Server, nginx</div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-4 group">OS experience:</div>
-          <div class="col-sm-7">Linux (GNOME/KDE), RedHat/CentOS, Ubuntu/Debian, Gentoo, Solaris, Windows
-            Server, Mac OS X<br/>Experience with creating rpm/deb/ebuild packages.
+          <div class="col-sm-7">
+            <a href="https://junit.org/junit5/" class="skill" target="_blank">JUnit 5 Platform</a>
+            <a href="https://mockito.org/" class="skill" target="_blank">Mockito</a>
+            <a href="https://www.selenium.dev/" class="skill" target="_blank">Selenium</a>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-sm-4 group">Containers and Orchestration:</div>
+          <div class="col-sm-4 group">Databases:</div>
           <div class="col-sm-7">
-            Docker, Kubernetes, CoreOS
+            <a href="https://www.postgresql.org/" class="skill" target="_blank">PostgreSQL</a>
+            <a href="https://mariadb.org/" class="skill" target="_blank" title="Replacement for MySQL">MariaDB</a>
+            <a href="https://www.mongodb.com/" class="skill" target="_blank">MongoDB</a>
+            <a href="https://redis.io/" class="skill" target="_blank">Redis</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4 group">Build Systems:</div>
+          <div class="col-sm-7">
+            <a href="https://gradle.org/" class="skill" target="_blank" title="Include Gradle Kotlin DSL">Gradle</a>
+            <a href="https://maven.apache.org/" class="skill" target="_blank">Maven</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4 group">Web Servers:</div>
+          <div class="col-sm-7">
+            <a href="https://nginx.org/" class="skill" target="_blank">nginx</a>
+            <a href="http://undertow.io/" class="skill" target="_blank">Undertow</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4 group">Automation & Orchestration:</div>
+          <div class="col-sm-7">
+            <a href="https://kubernetes.io/" class="skill" target="_blank">Kubernetes</a>
+            <a href="https://helm.sh/" class="skill" target="_blank">Helm</a>
+            <a href="https://www.docker.com/" class="skill" target="_blank">Docker</a>
+            <a href="https://www.ansible.com/" class="skill" target="_blank">Ansible</a>
+            <a href="https://www.terraform.io/" class="skill" target="_blank">Terraform</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4 group">CI/CD:</div>
+          <div class="col-sm-7">
+            <a href="https://gitlab.com/" class="skill" target="_blank">GitLab</a>
+            <a href="https://www.jenkins.io/" class="skill" target="_blank">Jenkins</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4 group">OS experience:</div>
+          <div class="col-sm-7">
+            <a href="https://www.apple.com/macos/" class="skill" target="_blank">macOS</a>
+            <a href="https://www.debian.org/" class="skill" target="_blank">Debian</a>
+            <a href="https://www.centos.org/" class="skill" target="_blank">CentOS</a>
+            <a href="http://coreos.com/" class="skill" target="_blank">CoreOS Container Linux</a>
+            <a href="https://www.gentoo.org/" class="skill" target="_blank">Gentoo</a>
           </div>
         </div>
 
         <div class="row">
           <div class="col-sm-4 group">Cloud:</div>
-          <div class="col-sm-7">Google App Engine and Google Cloud, AWS (Amazon Cloud Computing Services),
-            Aliyun
+          <div class="col-sm-7">
+            <a href="https://aws.amazon.com/" class="skill" target="_blank" title="Amazon Web Services">AWS</a>
+            <a href="https://cloud.google.com/" class="skill" target="_blank">Google Cloud</a>
+            <a href="https://www.alibabacloud.com/" class="skill" target="_blank" title="Aliyun">Alibaba Cloud</a>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-sm-4 group">IDE:</div>
-          <div class="col-sm-7">Intellij IDEA, Eclipse, NetBeans</div>
+          <div class="col-sm-4 group">IDE, tools:</div>
+          <div class="col-sm-7">
+            <a href="https://www.jetbrains.com/idea/" class="skill" target="_blank">Intellij IDEA</a>
+            <a href="https://git-scm.com/" class="skill" target="_blank">Git</a>
+          </div>
         </div>
 
         <div class="row">
-          <div class="col-sm-4 group">Tools:</div>
-          <div class="col-sm-7">Git, Mercurial, SVN, CVS</div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-4 group">Methodologies:</div>
-          <div class="col-sm-7">Comfortable with OOP (Object Oriented Programming), OOA (Object Oriented
-            Analysis and Design), TDD (Test driven development), MVP, MVC
+          <div class="col-sm-4 group">Methodologies/Paradigm:</div>
+          <div class="col-sm-7">
+            OOP (Object Oriented Programming),<br/>
+            Functional programming,<br/>
+            Reactive programming,<br/>
+            TDD (Test driven development),<br/>
+            Multi-threading and parallel programming
           </div>
         </div>
 
@@ -1409,7 +1585,7 @@
           <h4 style="margin-top: 15px;">
             CNET <span style="margin-left: 1em;color: #969696;font-size: 16px;">14 August 2015</span>
           </h4>
-          <ul style="margin: 0;padding: 0 0 0 10px;border-left: 3px solid #000000;font-size: 15px;">
+          <ul class="interviews-ul">
             <li style="list-style-type: none;">
               <a href="http://www.cnetnews.com.cn/2015/0814/3059231.shtml"
                  title="《IT老外在中国》第2期：“战斗民族”的工程师在中国互联网公司怎么工作？"
@@ -1428,7 +1604,7 @@
           <h4 style="margin-top: 25px;">
             CSDN <span style="margin-left: 1em;color: #969696;font-size: 16px;">10 August 2015</span>
           </h4>
-          <ul style="margin: 0;padding: 0 0 0 10px;border-left: 3px solid #000000;font-size: 15px;">
+          <ul class="interviews-ul">
             <li style="list-style-type: none;">
               <a href="http://www.csdn.net/article/2015-08-10/2825424"
                  title="专访：两名外国工程师眼中的中国互联网与创业"
@@ -1449,54 +1625,40 @@
         </div>
 
         <div>
-          <h2 id="experience">Other Experience</h2>
+          <h2 id="experience">Open-Source Contribution</h2>
 
-          <h4>Grails Plugins Developer</h4>
+          <h4>Projects</h4>
           <ul>
             <li>
-              <a href="https://github.com/enr/grails-spring-security-oauth" target="_blank">
-                Spring Security OAuth
+              <a href="https://github.com/donbeave/graphql-java-datetime" target="_blank">
+                graphql-java-datetime
               </a>
-              (include extensions)
-            </li>
-            <li><a href="https://github.com/donbeave/grails-gwt" target="_blank">GWT</a></li>
-            <li>
-              <a href="https://github.com/donbeave/grails-gwt-requestfactory" target="_blank">
-                GWT RequestFactory
-              </a>
-            </li>
-            <li><a href="https://github.com/donbeave/grails-gwtp" target="_blank">GWTP</a></li>
-            <li><a href="https://github.com/donbeave/grails-geoip" target="_blank">GeoIP</a></li>
-            <li><a href="https://github.com/donbeave/grails-google-drive" target="_blank">Google Drive</a>
-            </li>
-            <li>
-              <a href="https://github.com/donbeave/grails-console-charts" target="_blank">
-                Console Charts
-              </a>
-            </li>
-            <li><a href="https://github.com/donbeave/grails-sitemapper" target="_blank">Sitemapper</a></li>
-            <li><a href="https://github.com/donbeave/grails-gridfs" target="_blank">GridFS</a></li>
-            <li><a href="https://github.com/donbeave/grails-lesshat" target="_blank">LESS Hat</a></li>
-            <li>
-              <a href="https://github.com/donbeave/grails-font-awesome" target="_blank">Font-Awesome</a>
             </li>
           </ul>
 
-          <h4>GWT Developer</h4>
+          <h4>Pull Requests</h4>
           <ul>
-            <li><a href="https://github.com/donbeave/dianaui-universal" target="_blank">Diana UI</a></li>
+            <li>
+              <a href="https://github.com/opendistro-for-elasticsearch/opendistro-build/pull/53" target="_blank">
+                Open Distro for Elasticsearch
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/getsentry/sentry-java/pull/779" target="_blank">
+                Sentry SDK for Java
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/sentry-kubernetes/charts/pull/66" target="_blank">
+                Sentry Helm Chart
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/graphql-java-kickstart/graphql-java-servlet/pull/247" target="_blank">
+                GraphQL Java Kickstart
+              </a>
+            </li>
           </ul>
-
-          <h4>Docker Images Maintainer</h4>
-
-          <ul>
-            <li><a href="https://github.com/donbeave/docker-nginx-pagespeed" target="_blank">NGINX with
-              PageSpeed</a></li>
-          </ul>
-
-          <a href="http://www.zhokhov.com/portfolio.html" class="btn portfolio"
-             target="_blank">Portfolio</a>
-
         </div>
 
 
