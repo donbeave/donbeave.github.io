@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/donbeave/donbeave.github.io#readme",
   "devDependencies": {
-    "grunt": "^0.4.5",
+    "grunt": "^1.3.0",
     "grunt-contrib-copy": "^0.8.0",
     "grunt-contrib-cssmin": "^0.13.0",
     "grunt-contrib-htmlmin": "^0.4.0"
